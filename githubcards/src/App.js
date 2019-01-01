@@ -14,8 +14,6 @@ class App extends Component {
       .then(users => {
         this.setState({ users })
       });
-
-
   }
   render() {
     return (
