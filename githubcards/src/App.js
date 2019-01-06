@@ -8,11 +8,13 @@ class App extends Component {
     users: []
   };
 
+  getUser = () => {};
+
   componentDidMount() {
     fetch("/users")
       .then(res => res.json())
       .then(users => {
-        this.setState({ users })
+        this.setState({ users });
       });
   }
   render() {
@@ -20,7 +22,7 @@ class App extends Component {
       <div>
         <div className="cardContainer roboto">
           <SearchBox />
-          <Card userData={this.state.users}/>
+          <Card userData={this.state.users} />
         </div>
       </div>
     );
