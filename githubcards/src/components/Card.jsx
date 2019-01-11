@@ -9,9 +9,9 @@ class Card extends Component {
         <div className="w3-container">
           <h2>Photo Card</h2>
 
-          <div className="w3-card-4" style={{ width: "70%" }}>
+          <div className="w3-card-4" style={{ width: "30%" }}>
             <img
-              src="https://www.w3schools.com/w3css/img_snowtops.jpg"
+              src="public/images/me.jpg"
               alt="Norway"
               style={{ width: "100%" }}
             />
@@ -30,9 +30,3 @@ class Card extends Component {
 }
 
 export default Card;
-
-/*
-White-space: pre-line
-
-to keep lines
-*/

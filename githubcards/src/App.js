@@ -8,24 +8,37 @@ class App extends Component {
     users: []
   };
 
-  getUser = () => {};
+  //
+  // 1. Get a searched User
+  //
 
-  componentDidMount() {
-    fetch("/users")
+  getUser = user => {
+    fetch(`/getUser?user=${user}`)
       .then(res => res.json())
-      .then(users => {
-        this.setState({ users });
+      .then(user => {
+        this.setState({ user });
       });
-  }
+  };
+
   render() {
-    return (
-      <div>
-        <div className="cardContainer roboto">
-          <SearchBox />
-          <Card userData={this.state.users} />
+    if (this.state.users.length <= 0) {
+      return (
+        <div>
+          <div className="cardContainer roboto">
+            <SearchBox getUser={this.getUser.bind(this)} />
+          </div>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return (
+        <div>
+          <div className="cardContainer roboto">
+            <SearchBox />
+            <Card userData={this.state.users} />
+          </div>
+        </div>
+      );
+    }
   }
 }
 
