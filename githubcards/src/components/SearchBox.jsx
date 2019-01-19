@@ -15,7 +15,8 @@ class SearchBox extends Component {
   submitUser = event => {
     event.preventDefault();
     let user = this.state;
-    console.log(user);
+    const { getUser } = this.props;
+    getUser(user.user)
   };
 
   render() {

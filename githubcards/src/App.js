@@ -15,13 +15,18 @@ class App extends Component {
   getUser = user => {
     fetch(`/getUser?user=${user}`)
       .then(res => res.json())
-      .then(user => {
-        this.setState({ user });
+      .then(user_data => {
+        console.log(user_data)
+        this.setState({
+          users: user_data
+         });
       });
+      console.log(user)
   };
 
   render() {
-    if (this.state.users.length <= 0) {
+    console.log(this.state.users.length);
+    if (this.state.users.length === 0) {
       return (
         <div>
           <div className="cardContainer roboto">
@@ -33,7 +38,7 @@ class App extends Component {
       return (
         <div>
           <div className="cardContainer roboto">
-            <SearchBox />
+            <SearchBox getUser={this.getUser.bind(this)} />
             <Card userData={this.state.users} />
           </div>
         </div>

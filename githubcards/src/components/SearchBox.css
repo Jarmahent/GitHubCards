@@ -40,7 +40,7 @@ form > .textbox:focus {
 form > .button {
   outline: 0;
   background: none;
-  background-color: rgba(38, 50, 56, 0.8);
+  background-color: white;
   float: left;
   height: 42px;
   width: 42px;
@@ -60,4 +60,10 @@ form > .button {
 
 form > .button:hover {
   background-color: rgba(0, 150, 136, 0.8);
+}
+
+#email{
+  position: absolute;
+  margin-top: 55px;
+  float: right;
 }
