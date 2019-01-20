@@ -2,8 +2,8 @@ var express = require("express");
 var router = express.Router();
 const axios = require("axios");
 
-const clientId = "";
-const clientSecret = "";
+const clientId = "472988b387f54d295169";
+const clientSecret = "c22ba925018768f7641981992436efe57d7e727c";
 
 /* GET users listing. */
 router.get("/", function(req, res, next) {

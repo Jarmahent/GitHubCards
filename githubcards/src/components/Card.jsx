@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-import "./Card.css";
+import "./Card.scss";
+
 class Card extends Component {
   state = {};
   render() {
     const { userData } = this.props;
     return (
-      <div>
+      <div className="Card">
         <div className="container">
           <div className="images">
-            <img src={userData.avatar_url} />
+            <img alt="/public/images/notfound.png" src={userData.avatar_url}/>
           </div>
           <div className="product">
             <p>Github Card by KevinTweaks</p>

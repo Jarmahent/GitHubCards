@@ -1,0 +1,155 @@
+.Card2 .title{
+  text-transform: uppercase;
+  margin: 50px auto 0 auto;
+  text-align:center;
+  color: #d08bab;
+  font-size: 32px;
+}
+
+.Card2 .gallery.box{
+  font-family: 'Ubuntu', sans-serif;
+  width: 320px;
+  height:405px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 1%;
+  border: 10px #c26d85 solid;
+}
+
+.Card2 .gallery .card{
+	position: relative;
+}
+
+.Card2 img {
+  width: 290px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.Card2 .gallery .background, .gallery .column{
+  height: 405px;
+}
+
+.Card2 .gallery .column{
+  width: 20%;
+  float: left;
+}
+
+.Card2 .gallery .column.col1{
+  background-color: #325C7D;
+}
+
+.Card2 .gallery .column.col2{
+  background-color: #6C5B7B;
+}
+
+.Card2 .gallery .column.col3{
+  background-color: #C26D85;
+}
+
+.Card2 .gallery .column.col4{
+  background-color: #EB7180;
+}
+.Card2 .gallery .column.col5{
+  background-color: #F5B195;
+}
+
+.Card2 .gallery .overlay{
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left:0;
+	right: 0;
+	opacity: 0;
+  background-color: #000;
+	-webkit-transition: opacity 0.35s;
+	-o-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+.Card2 .gallery .info,
+.Card2 .gallery .foot{
+	-webkit-transition: bottom 0.35s;
+	-o-transition: bottom 0.35s;
+	transition: bottom 0.35s;
+}
+
+.Card2 .gallery .info{
+	position: absolute;
+	bottom: -35px;
+	width: 100%;
+}
+
+.Card2 .gallery .info h2 a{
+  color: #fff;
+  display: block;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  text-decoration:none;
+}
+
+.Card2 .gallery .info h2{
+	line-height: 24px;
+	font-size: 18px;
+  padding: 0 10px;
+  font-weight: 400;
+}
+
+.Card2 .gallery .foot{
+	height: 35px;
+	bottom: -35px;
+	position: relative;
+	color: #fff;
+  padding: 0 10px;
+
+}
+
+.Card2 .gallery .foot .social{
+	float: right;
+	color: #fff;
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+.Card2 .gallery .foot .line{
+	height: 2px;
+	display: block;
+	margin: 10px 0;
+  background-color: #fff;
+  margin-top: 20px;
+  width: 0%;
+  transition: width 0.6s;
+}
+
+.Card2 .gallery .date{
+  font-weight: 300;
+}
+
+.Card2 .gallery .fa-camera-retro{
+  top: 0;
+  left: 0;
+  padding: 10px 10px;
+  position: absolute;
+  color: #fff;
+  font-size: 24px;
+  z-index: 1;
+  transition: font-size 0.35s;
+}
+
+/* All hovers here! */
+.Card2 .gallery:hover .info,
+.Card2 .gallery:hover .foot{
+	bottom:10px;
+}
+
+.Card2 .gallery:hover .overlay{
+	opacity: 0.5;
+}
+
+.Card2 .gallery:hover .foot .line{
+  width: 100%;
+}
+
+.Card2 .gallery:hover .fa-camera-retro{
+  font-size:32px;
+}
