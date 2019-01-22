@@ -12,7 +12,7 @@ class Card2 extends Component {
         <div className="box gallery">
           <div className="card">
             <div className="background">
-              <img alt="image" src={userData.avatar_url} />
+              <img alt="/public/images/notfound.png" src={userData.avatar_url} />
               <div className="column col1" />
               <div className="column col2" />
               <div className="column col3" />
@@ -22,18 +22,18 @@ class Card2 extends Component {
             <div  className="overlay" />
 
 
-            <a className="thumb" href="#" />
+
             <div className="info">
               <h2>
-                <a href="#">{userData.bio}</a>
+                <a href={userData.html_url}>{userData.bio}</a>
               </h2>
               <div className="foot">
                 <i className="line" />
                 <span className="date">{userData.name}</span>
-                <a href={userData.html_url} target="_blank" className="social">
+                <a href={userData.html_url} className="social">
                   <i className="fa fa-github-square" />
                 </a>
-                <a href={userData.email} target="_blank" className="social">
+                <a href={userData.email} className="social">
                   <i className="fa fa-envelope-o" />
                 </a>
               </div>

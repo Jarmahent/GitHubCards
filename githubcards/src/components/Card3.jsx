@@ -2,11 +2,6 @@ import React, { Component } from "react";
 import "./Card3.scss";
 
 class Card3 extends Component {
-  profileLink = (event) =>{
-    window.location.href = "https://google.com";
-  }
-
-
   render() {
     const {userData} = this.props;
     return (
