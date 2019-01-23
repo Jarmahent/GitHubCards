@@ -22,7 +22,7 @@ class App extends Component {
 
   getUser = user => {
 
-    fetch(`/getUser?username=${user}&access_token=2h9ax83ctkxaysx2ttch`)
+    fetch(`https://flask-backend.nanoapp.io/getUser?username=${user}&access_token=2h9ax83ctkxaysx2ttch`)
       .then(res => res.json())
       .then(user_data => {
         this.setState({
